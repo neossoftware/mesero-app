@@ -1,3 +1,4 @@
+import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -22,7 +23,8 @@ import { ConsumoComponent } from './consumo/consumo.component';
     ConsumoComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule 
   ],
   providers: [],
   bootstrap: [AppComponent]

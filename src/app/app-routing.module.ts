@@ -14,7 +14,8 @@ const appRoutes: Routes = [
 { path:'', redirectTo : 'plato', pathMatch: 'full'},
 ]
 @NgModule({
-   imports : [RouterModule]
+   imports : [RouterModule.forRoot(appRoutes)],
+   exports: [RouterModule]
 })
 
 export class AppRoutingModule {
