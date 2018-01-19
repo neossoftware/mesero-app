@@ -1,17 +1,15 @@
-import { Directive,HostBinding,HostListener } from '@angular/core';
-
+import { Directive, HostBinding, HostListener } from "@angular/core";
 
 @Directive({
-  selector: '[appCombobox]'
+  selector: "[appCombobox]"
 })
 export class ComboboxDirective {
+  @HostBinding("class.open") estaAbierto: boolean = false;
 
-  @HostBinding('class.open') estaAbierto: boolean = false;
+  constructor() {}
 
-  constructor() { }
-
-  @HostListener('click') abrir () {
+  @HostListener("click")
+  abrir() {
     this.estaAbierto = !this.estaAbierto;
   }
-
 }
