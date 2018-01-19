@@ -13,7 +13,7 @@ import { ComboboxDirective } from './_directive/combobo.directive';
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    ComboboDirective
+    ComboboxDirective
   ],
   imports: [
     BrowserModule
