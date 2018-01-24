@@ -19,6 +19,7 @@ import{ FormsModule } from "@angular/forms";
 
 import {DataTableModule} from "angular2-datatable";
 import { PlatoService } from './_service/plato.service';
+import { PlatoFilterPipe } from './_pipe/plato-filter.pipe';
 
 
 
@@ -34,7 +35,8 @@ import { PlatoService } from './_service/plato.service';
     PlatoListaComponent,
     PlatoDetalleComponent,
     PlatoEdicionComponent,
-    PlatoInicioComponent
+    PlatoInicioComponent,
+    PlatoFilterPipe
   ],
   imports: [
     BrowserModule,
