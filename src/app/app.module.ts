@@ -15,6 +15,12 @@ import { PlatoDetalleComponent } from './plato/plato-detalle/plato-detalle.compo
 import { PlatoEdicionComponent } from './plato/plato-edicion/plato-edicion.component';
 import { PlatoInicioComponent } from './plato/plato-inicio/plato-inicio.component';
 
+import{ FormsModule } from "@angular/forms";
+
+import {DataTableModule} from "angular2-datatable";
+import { PlatoService } from './_service/plato.service';
+
+
 
 @NgModule({
   declarations: [
@@ -32,9 +38,11 @@ import { PlatoInicioComponent } from './plato/plato-inicio/plato-inicio.componen
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule 
+    AppRoutingModule,
+    FormsModule,
+    DataTableModule
   ],
-  providers: [],
+  providers: [PlatoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
-import { Plato } from './../_model/plato';
+import { Plato } from '../_model/plato';
+
 
 @Injectable()
 export class PlatoService {
@@ -9,5 +10,9 @@ platos: Plato[] = [
 ];
 
   constructor() { }
+
+  getPlatos() {
+    return this.platos;
+  }
 
 }

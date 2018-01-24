@@ -7,9 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PlatoComponent implements OnInit {
 
+ 
   constructor() { }
 
   ngOnInit() {
+    
   }
 
 }
