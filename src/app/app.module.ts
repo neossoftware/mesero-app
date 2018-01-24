@@ -10,6 +10,10 @@ import { ComboboxDirective } from './_directive/combobo.directive';
 import { PlatoComponent } from './plato/plato.component';
 import { ConsultaComponent } from './consulta/consulta.component';
 import { ConsumoComponent } from './consumo/consumo.component';
+import { PlatoListaComponent } from './plato/plato-lista/plato-lista.component';
+import { PlatoDetalleComponent } from './plato/plato-detalle/plato-detalle.component';
+import { PlatoEdicionComponent } from './plato/plato-edicion/plato-edicion.component';
+import { PlatoInicioComponent } from './plato/plato-inicio/plato-inicio.component';
 
 
 @NgModule({
@@ -20,7 +24,11 @@ import { ConsumoComponent } from './consumo/consumo.component';
     ComboboxDirective,
     PlatoComponent,
     ConsultaComponent,
-    ConsumoComponent
+    ConsumoComponent,
+    PlatoListaComponent,
+    PlatoDetalleComponent,
+    PlatoEdicionComponent,
+    PlatoInicioComponent
   ],
   imports: [
     BrowserModule,
